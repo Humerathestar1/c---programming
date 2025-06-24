@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int arr[6];
+    int i;
+    int sum=0,average=0;
+    cout<<"enter the value: ";
+    for(i =0 ;i<5;i++){
+            cin>>arr[i];
+    }
+    for(i =0 ;i<5;i++){
+        sum+=arr[i];
+        average = sum/5;
+        cout<<sum is"
+            
+    }
+    cout<<"sum is"<<sum<<endl;
+   cout<<"average is"<<average<<endl;
+    return 0;
+}
