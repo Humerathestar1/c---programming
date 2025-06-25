@@ -1,0 +1,47 @@
+
+  #include <iostream>
+using namespace std;
+
+class Check {
+    private:
+    int a[6], evenCount = 0, oddCount = 0;
+
+    public:
+    void input() {
+            cout << "Enter the elements in array:" << endl;
+                 for (int i = 0; i < 6; i++) {
+                      cin >> a[i];
+              }
+         }
+
+    void even() {
+            for (int i = 0; i < 6; i++) {
+            if (a[i] % 2 == 0) {
+                   evenCount++;
+            }
+        }
+    }
+
+    void odd() {
+        for (int i = 0; i < 6; i++) {
+               if (a[i] % 2 != 0) {
+                   oddCount++;
+                }
+            }
+ }
+
+    void display() {
+        cout << "Even count = " << evenCount << endl;
+        cout << "Odd count = " << oddCount << endl;
+    }
+};
+
+int main() {
+    Check c;
+    c.input();
+    c.even();
+    c.odd();
+    c.display();
+
+    return 0;
+}
